@@ -1,1 +1,13 @@
-packages
+# centos7：https://elrepo.org/linux/kernel/el7/x86_64/RPMS/kernel-ml-devel-5.2.8-1.el7.elrepo.x86_64.rpm
+# wireguard一键脚本：https://github.com/atrandys/wireguard/tree/master
+#安装视频
+https://www.youtube.com/watch?v=spGd9Cngmm4
+# LEDE/OpenWRT路由器版本：
+# opkg install wireguard
+https://git.lede-project.org/?p=source.git;a=blob;f=package/network/services/wireguard/Makefile
+
+
+#https://tunsafe.com/vpn
+打开TunSafe Windows客户端，点击Generate Key Pair，打开密钥生成页面，点击Randomize生成密钥
+进入配置下载页面，https://tunsafe.com/vpn，将刚生成的Public Key复制粘贴到此网页中的Enter your public key中，点击Create account，生成配置文件
+再将生成的Private Key复制到这个页面的Enter your private key里面。这个页面是可以编辑的，你可以看到DNS里面写了Google Public DNS 8.8.8.8，你也可以改成自己想要的DNS，后续所有VPN流量会使用这个DNS。最下面的Endpoint就是服务器地址。一个配置文件只能对应一个服务器，所以你需要将要使用的服务器前面Endpoint的#去掉，将其他不使用的服务器加上
